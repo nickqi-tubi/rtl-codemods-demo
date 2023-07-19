@@ -1,0 +1,28 @@
+{
+  "extends": ["react-app"],
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  },
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "@(common|src|test)/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ]
+  }
+}

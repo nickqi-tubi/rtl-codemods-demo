@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "exclude": ["**/*.spec.ts", "src/transforms/__testfixtures__"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  }
+}
