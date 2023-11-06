@@ -1,16 +1,18 @@
+English | [中文](./README-zh_CN.md)
+
 # RTL Codemods Demo
 
-这份 Demo 源码并非 Tubi 在 Enzyme 项目迁移中使用的成品 Codemods 代码，而是在删除业务代码依赖和繁杂的 transfomers 实现后，用于展示 Codemods 代码组织方式和工作原理的极精简版本。它既是学习 Codemods 的一个参考示例，也可被用作构建专有 Codemods 的脚手架基础。
+The provided demo source code is not the completed Codemods utilized by Tubi during the Enzyme project migration. Instead, it is a highly simplified version that demonstrates the structure and operating principles of Codemods code after removing business code dependencies and complex transformer implementations. This demo serves as both a learning reference for Codemods and a scaffold foundation for developing custom Codemods.
 
-## 调用 Codemods 脚本
 
-作为示例代码，这里并未将 Codemods 封装成命令行命令。但用户可以方便地通过预置的 npm 脚本达到同样的命令行执行效果。例如，可以通过执行如下的 npm 命令将基于 Enzyme 的 `./demo/test.spec.tsx` 测试文件自动迁移为 RTL 的实现。
+## Invoke Codemods Script
+The demo code here is not packaged as a command-line command. However, users can easily achieve the same command-line execution effect through the predefined npm script. For example, you can execute the following npm command to automatically migrate the Enzyme-based test file `./demo/test.spec.tsx` to an RTL implementation.
 
 ```shell
 npm run transform ./demo/test.spec.tsx
 ```
 
-更多命令选项，可以通过 `--help` 参数获得。
+For more command options, you can get them using the `--help` parameter.
 
 ```shell
 npm run transform -- --help
